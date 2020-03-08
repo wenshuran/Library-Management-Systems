@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>View Previous Loans - Angiris Council LMS</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="header-bar">
+    <h1>Angiris Council</h1>
+    <h1>Library Management System</h1>
+</div>
+<div class="main-body">
+    <div>
+        <a class="btn bigOption backBtn" href="/librarian/view_historical_loan_page">Back</a>
+        <p>Hey <label type="text" th:text="${username}"></label>. Here you can view all of your previous loans.</p>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+					<th>Title</th>
+                    <th>Due Datw</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="loan:${loans}">
+                    <td th:text="${loan.id}"></td>
+                    <td th:text="${loan.due_date}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="footer" style="display: block">Created by Angiris Council</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

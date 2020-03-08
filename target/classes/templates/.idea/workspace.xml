@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="105dfd1c-0bcb-4c13-b44b-f2c2bd0f9dc7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YoijVvk1QVmJQAV0RYHsK8kFwO" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Feedback.html">
+    <configuration name="Feedback.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/templates/Feedback.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberJoin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/templates/MemberJoin.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberLogin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/templates/MemberLogin.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberPortal.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/templates/MemberPortal.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberSearch.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/templates/MemberSearch.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Feedback.html" />
+        <item itemvalue="JavaScript Debug.MemberJoin.html" />
+        <item itemvalue="JavaScript Debug.MemberLogin.html" />
+        <item itemvalue="JavaScript Debug.MemberPortal.html" />
+        <item itemvalue="JavaScript Debug.MemberSearch.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="105dfd1c-0bcb-4c13-b44b-f2c2bd0f9dc7" name="Default Changelist" comment="" />
+      <created>1583615482885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583615482885</updated>
+      <workItem from="1583615487082" duration="41000" />
+      <workItem from="1583615669955" duration="2837000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

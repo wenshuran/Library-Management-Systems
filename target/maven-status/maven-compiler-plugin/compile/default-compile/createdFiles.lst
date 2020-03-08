@@ -1,0 +1,16 @@
+LMS\UserController.class
+LMS\ReservationRepository.class
+LMS\LibrarianController.class
+LMS\UserRepository.class
+LMS\Artifact.class
+LMS\UserSession.class
+LMS\Loan.class
+LMS\LMSApplication.class
+LMS\MemberController.class
+LMS\Feedback.class
+LMS\FeedbackRepository.class
+LMS\PublicController.class
+LMS\Reservation.class
+LMS\User.class
+LMS\ArtifactRepository.class
+LMS\LoanRepository.class

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add/Remove An Artifact - Angiris Council LMS</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="header-bar">
+    <h1>Angiris Council</h1>
+    <h1>Library Management System</h1>
+</div>
+<div class="main-body">
+    <div>
+        <a class="btn bigOption backBtn" href="/librarian/management">Back</a>
+        <p>Hey <label type="text" th:text="${username}"></label>. Here you can add or remove artifacts from the catalogue.</p>
+    </div>
+	<br>
+   <div>
+        <p><b>Remove artifacts from the catalogue.</b></p>
+    </div>	
+    <div>
+        <table width="50%">
+            <thead>
+                <tr>
+                    <th>Artifact Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="artifact:${artifacts}">
+                    <td th:text="${artifact.name}"></td>
+                    <td><a class="btn tableButton" th:href="'/librarian/remove_artifact/'+${artifact.id}">Remove</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	<br><br>
+	<div>
+        <p><b>Add an artifact here!</b></p>
+    </div>
+	<div>
+        <form method="post" action="/librarian/add_artifact">
+            <div>
+                <label  class="inputBox" for="name">Artifact Name</label>
+                <br>
+                <input class="inputBox" type="text" name="name">
+            </div>
+            <div>
+                <label  class="inputBox" for="type">Type</label>
+                <br>
+                <input class="inputBox" type="text" name="type">
+            </div><br>
+            <button type="submit" class="btn bigOption">Add</button>
+        </form>
+    </div>
+    <p class="footer" style="display: block">Created by Angiris Council</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

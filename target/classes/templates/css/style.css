@@ -1,0 +1,208 @@
+body{
+    background-color: black !important;
+}
+.header-bar{
+    padding: 15px;
+    text-align: center;
+    background: url("lib.jpg");
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.header-bar h1{
+    font-family: Calibri;
+    font-size: 24pt;
+    letter-spacing: 2px;
+    word-spacing: -0.6px;
+    color: #ffff1a;
+    font-weight: bold;
+    font-variant: small-caps;
+    background-color: black;
+    width: 500px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-bar p{
+    font-size: 17px;
+    font-variant: none;
+}
+
+
+.main-body{
+    background: #0d0d0d;
+    position: relative;
+    padding: 13px;
+    max-width: 100%;
+    text-align: center;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.main-body .bigOption{
+    position: relative;
+    font-weight: 500;
+    color: white;
+    width: 30%;
+    display: block;
+    background-color: #FF4900;
+    margin: 20px auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: 0.2s ease;
+}
+
+.main-body .bigOption:hover{
+    font-weight: bold;
+    background-color: #DFDC00;
+    color: black;
+}
+
+.main-body p{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-variant: none;
+    font-size: 12pt;
+    font-weight: normal;
+    color: white;
+    background-color: #0d0d0d;
+}
+
+.containerFamily{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 300px;
+    width: 50%;
+}
+
+.container{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px !important;
+    max-height: 100% !important;
+    text-align: center;
+    float: left;
+}
+
+
+.container img{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    height: auto;
+}
+
+.overlay{
+    background-color: #FF4900;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    float: top;
+    width: 200px;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+.text {
+    color: yellow;
+    font-weight: bolder;
+    font-size: 12pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.tableButton{
+    color: whitesmoke;
+    background-color: #FF4900;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.tableButton:hover{
+    background-color: #FF4900;
+}
+
+.backBtn{
+    position: absolute;
+    z-index: 1;
+    float: right;
+    max-width: 45px;
+    max-height: 30px;
+    margin: 0;
+    display: block;
+    padding: 2px !important;
+}
+
+table{
+    z-index: 1;
+    width:100%;
+    margin-top: 40px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.footer{
+    margin-top: 50px;
+}
+
+table thead{
+    font-size: 14pt;
+    color: #FF4900;
+}
+
+table tbody{
+    color: #DFDC00;
+    font-size: 12pt;
+}
+
+table tr td{
+    padding: 8px;
+}
+
+table tr th{
+    padding: 12px;
+}
+
+input.inputBox{
+    background-color: #DFDC00;
+    color: black;
+    border: none;
+    padding: 5px;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+label.inputBox{
+    font-weight: 500;
+    color: #FF4900;
+    margin-top: 15px;
+}
+
+label.inputOpt{
+    color: #DFDC00;
+}
+
+a.formEndPoint{
+    max-width: 12% !important;
+}

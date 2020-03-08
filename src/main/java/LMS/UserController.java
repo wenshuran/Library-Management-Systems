@@ -17,28 +17,36 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/login")
+    @GetMapping("/")
     public String loginPage(Model model){
+        User user = new User();
+        user.setName("admin");
+        user.setEmail("aaa");
+        user.setPassword("bbb");
+        user.setGender("male");
+        user.set_admin(true);
+        userRepository.save(user); //Add admin
         if (userSession.isLoginFailed()){
             model.addAttribute("login_status", "error");
             userSession.setLoginFailed(false);
         }
-        return "login";
+        return "Greeting";
     }
 
     @GetMapping("/logout")
     public void logout(HttpServletResponse response) throws Exception {
         userSession.setUser(null);
             response.sendRedirect("/");
-        }
+    }
 
-        @PostMapping("/login")
-        public void doLogin(String email, String password, HttpServletResponse response) throws Exception {
-            Optional<User> user = userRepository.findByEmailAndPassword(email, password);
-            if (user.isPresent()) {
-                User user1 = user.get();
-                userSession.setUser(user1);
-                if (user1.is_admin())
+    @PostMapping("/login")
+    public void doLogin(String email, String password, HttpServletResponse response) throws Exception {
+        Optional<User> user = userRepository.findByEmailAndPassword(email, password);
+        if (user.isPresent()) {
+            User user1 = user.get();
+            userSession.setUser(user1);
+            user1.set_admin(false); //TODO
+            if (user1.is_admin())
                 response.sendRedirect("/librarian/management");
             else
                 response.sendRedirect("/member/management");
